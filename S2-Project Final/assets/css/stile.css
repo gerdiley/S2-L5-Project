@@ -1,0 +1,362 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.8;
+}
+
+.button {
+    background-image: linear-gradient(to right, #6cc1e2, #392f7a);
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+} 
+
+.button a {
+    text-decoration: none;
+    color:white
+} 
+
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+i {
+    color: red;
+}
+
+footer {
+    padding: 40px;
+}
+
+header>div,
+main>div,
+footer>div {
+    margin-bottom: 20px;
+}
+
+main #main-content,
+section,
+aside {
+    text-align: center;
+}
+
+.lni {
+    color: red;
+}
+
+
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #d3d3d3;
+    box-shadow: 5px 5px 3px #d3d3d3;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    flex-wrap: wrap;
+    top: 0;
+    padding: 20px;
+}
+
+#logo {
+    margin: 0;
+}
+
+header nav{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 2s ease-in-out;
+}
+
+header #menu{
+    display: none;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul a{
+    text-decoration: none;
+    border-bottom: 1px solid red;
+}
+
+header ul li{
+    padding: 10px;
+    color: red;
+}
+
+header ul li:hover{
+    background-color: lightgray;
+} 
+
+header #menu:checked ~ nav{
+    height: 270px;
+}
+
+#logo img {
+    width: 200px;
+}
+
+
+header nav .lni {
+    font-size: 2.5em;
+}
+
+
+
+/* MAIN */
+
+ #title {
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    background-image: url('../images/banner.jpg');
+    background-position: center;
+    padding: 40px;
+}
+
+#title p {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+main #main-content {
+    padding: 40px;
+}
+
+
+main div {
+    margin-bottom: 30px;
+}
+
+#main-content i {
+    font-size: 3rem;
+}
+
+/* button chiedi info */
+
+#button-info{
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    0%{
+        transform: scale(1);
+    }
+
+}
+
+
+
+section {
+    background-color: #0c0633;
+    color: white;
+    padding: 120px 40px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+aside img {
+    margin-bottom: 10px;
+}
+
+#chi-siamo-img{
+    text-align: center;
+}
+
+#chi-siamo-img img{
+    width: 60%;
+}
+
+table{
+    width: 60vw;
+    text-align: center;
+    margin: auto;
+}
+table caption {
+    font-size: 1.5em;
+}
+
+table thead{
+    background-color: rgb(47, 47, 130);
+    color: white;
+    
+}
+table thead tr td{
+    border-right:1px solid grey;
+}
+table tbody tr:nth-child(odd){
+    background-color: lightblue;
+}
+table td{
+    padding:10px;
+}
+
+
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#form #nome, #form #mail, #form #messaggio {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+ 
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: rgb(238, 238, 238);
+    padding: 10px 20px;
+
+}
+
+h4 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+#email {
+    display: block;
+    width: 100%;
+    height: 50px;
+
+}
+
+footer button {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+footer p{
+    text-align: left;
+    margin-bottom: 20px;
+} 
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+
+    #cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    #cards p {
+        text-align: left;
+    }
+
+    #cards div {
+        padding: 10px;
+    }
+
+    aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    aside div{
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+
+
+     #footer-flex{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+     }
+
+     footer .button{
+        font-size: 1rem;
+     }
+
+     address{
+        text-align: center;
+     }
+
+     footer div{
+        padding: 20px;
+     }
+
+     #contatti-flex{
+        display: flex;
+        justify-content: space-around;
+     }
+     #contatti-flex div{
+        padding: 50px;
+     }
+
+     #chi-siamo-img{
+        display: flex;
+        justify-content: space-between;
+     }
+
+}  
+
+@media screen and (max-width: 768px){
+     thead{
+        display: none;
+    }
+
+    table td{
+        display:flex;
+        text-align: left;
+        
+    }
+    table td::before{
+        content: attr(title);
+        padding-right: 10px;
+        min-width: 150px;
+        font-weight: bold;
+    }
+}
